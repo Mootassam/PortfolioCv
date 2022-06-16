@@ -15,6 +15,8 @@
   --description: rgb(185, 181, 201);
 
   /* Secondary Color */
+  --background-color: #2b2d33;
+
   --background-subscribe: rgba(128, 103, 240, 0.92);
   --color-address: rgb(247, 80, 35);
   --background-address: rgb(254, 223, 215);
@@ -23,9 +25,5 @@
   --color-phone: rgb(128, 103, 240);
   --background-phone: rgb(236, 232, 253);
 
-  --bs-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  );
+  --background-footer: rgb(63, 68, 83);
 }
