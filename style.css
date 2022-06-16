@@ -224,7 +224,7 @@ li {
   background-image: url(./images/about1.png), url(./images/about2.png);
   background-repeat: no-repeat, no-repeat;
   background-position: left top, bottom right;
-  padding: 0rem 7.6rem;
+  padding: 0rem 7.6rem 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,10 +241,31 @@ li {
 .about__left img {
   width: 100%;
 }
+.about__right > span {
+  font-family: Jost;
+  color: var(--secondary-orange);
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.right__detaills {
+  margin: 1.5rem 0 2rem;
+}
 .about__right h3 {
   font-size: 40px;
   line-height: 50px;
   vertical-align: baseline;
+}
+
+/* Styling the porfolio Version desktop  */
+.app__portfolio {
+  padding-top: 11.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 /* **** Styling the footer Section **** */
 
