@@ -1,0 +1,31 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary Color  */
+  --white-title: #ffffff;
+  --button-primary: #f75023;
+  --secondary-orange: rgb(247, 80, 35);
+  --primary--green: rgb(28, 190, 89);
+  --secondary--yellow: rgb(240, 196, 92);
+  --description: rgb(185, 181, 201);
+
+  /* Secondary Color */
+  --background-subscribe: rgba(128, 103, 240, 0.92);
+  --color-address: rgb(247, 80, 35);
+  --background-address: rgb(254, 223, 215);
+  --color-email: rgb(28, 190, 89);
+  --background-email: rgb(28, 190, 89);
+  --color-phone: rgb(128, 103, 240);
+  --background-phone: rgb(236, 232, 253);
+
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}

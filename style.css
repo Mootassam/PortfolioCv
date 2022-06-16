@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--description);
+}
+
+h3 {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 500;
+  color: var(--white-title);
+  font-family: "Jost", sans-serif;
+}
+span {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 500;
+}
+li {
+  font-family: "Jost", sans-serif;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--white-title);
+  list-style: none;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.button {
+  font-family: "Jost", sans-serif;
+  padding: 0.8rem 2.4rem;
+  background-color: var(--button-primary);
+  width: max-content;
+  color: var(--white-title);
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/* **** Styling the header the version Desktop *****/
+.app__header {
+  background-image: url(./images/background_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  padding: 1.45rem 5.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  position: static;
+  width: min(1440px, 100%);
+  margin-inline: auto;
+  font-family: "Jost", sans-serif;
+}
+.header__logo {
+  align-self: center;
+  width: 22.4%;
+}
+.header__logo img {
+  max-width: 110px;
+  height: auto;
+}
+
+.header__links ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+.header__button {
+  padding: 10.5px 35px !important;
+  background-color: transparent;
+  outline: 2px solid var(--button-primary);
+  color: var(--white-title);
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* **** Styling the header Content ***** */
+.header__content {
+  display: flex;
+  width: min(1440px, 100%);
+  margin-inline: auto;
+}
+.content__left,
+.content__right {
+  flex-basis: 50%;
+}
+
+.content__left {
+  text-align: start;
+  padding-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content__left > h3:nth-child(1) {
+  color: var(--secondary-orange);
+  font-size: 25px;
+  padding: 0;
+  line-height: 32.5px;
+}
+
+.content__left p > span:nth-child(1) {
+  color: var(--primary--green);
+}
+.content__left p {
+  padding: 0.8rem 0 1.4rem 0;
+  color: var(--white-title);
+  font-size: 19px;
+  line-height: 24px;
+}
+.content__left p > span:nth-child(2) {
+  color: var(--secondary--yellow);
+}
+.text {
+  padding: 0 0 2rem 0;
+}
+.content__right {
+  padding-top: 2.5rem;
+  width: 100%;
+  align-self: flex-end;
+  align-self: center;
+}
+.content__right img {
+  margin: 0 7.5rem;
+  max-height: 400px;
+}
