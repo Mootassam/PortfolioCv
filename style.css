@@ -41,7 +41,24 @@ li {
   border-radius: 50px;
 }
 
+.span__header {
+  margin-bottom: 6px;
+  color: var(--button-primary);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: jost, sans-serif;
+}
+.h3__header {
+  margin: 0px 0px 16px;
+  font-size: 38px;
+  line-height: 47.5px;
+}
+.p__header {
+  width: 70%;
+}
 /* **** Styling the header the version Desktop *****/
+
 .app__header {
   background-image: url(./images/background_header.jpg);
   background-repeat: no-repeat;
@@ -291,6 +308,7 @@ li {
   line-height: 30px;
   font-family: jost, sans-serif;
 }
+
 .portfolio__header h3 {
   margin: 0px 0px 16px;
   font-size: 38px;
@@ -324,6 +342,7 @@ li {
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin: auto;
+  padding-bottom: 3.5rem;
 }
 .images div {
   transform: scale(1) translateZ(0);
@@ -334,7 +353,61 @@ li {
 
   border-radius: 12px;
 }
+.button {
+  margin: auto;
+}
 
+.app__skills {
+  display: flex;
+  padding: 5rem 7.6rem;
+  align-items: flex-start;
+}
+.skills__left h3 {
+  width: 90%;
+}
+.skills__left p {
+  width: 90%;
+  line-height: 30px;
+}
+.skills__left,
+.skills__right {
+  flex-basis: 50%;
+}
+.skills__left {
+  margin-top: 7rem;
+  padding-right: 50px;
+}
+.skills__right {
+  padding-left: 100px;
+  width: 150px;
+}
+.skills__right img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.skills_img {
+  padding-top: 3.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+.skills_img > div {
+  display: flex;
+  background-color: var(--background-footer);
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  align-items: center;
+  justify-content: center;
+}
+.skills_img img {
+  object-fit: cover;
+  height: 50%;
+  width: 50%;
+}
 /* **** Styling the footer Section **** */
 
 .app__footer {
