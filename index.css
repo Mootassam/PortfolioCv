@@ -16,7 +16,7 @@
 
   /* Secondary Color */
   --background-color: #2b2d33;
-
+  --background-service: rgb(75, 79, 92);
   --background-subscribe: rgba(128, 103, 240, 0.92);
   --color-address: rgb(247, 80, 35);
   --background-address: rgb(254, 223, 215);
