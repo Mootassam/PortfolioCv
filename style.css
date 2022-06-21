@@ -477,7 +477,6 @@ Styling the Service for version Deskop */
   background-image: url(./images/contact1.png), url(./images/contact2.png);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
-  width: min(90%, 1440px);
   margin-inline: auto;
 }
 
@@ -532,11 +531,23 @@ Styling the Service for version Deskop */
 .address__icon {
   background-color: var(--background-address);
 }
+.contact__left i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+.address__icon i {
+  color: var(--color-address);
+}
 .email__icon {
   background-color: var(--background-email);
+  color: var(--color-email);
 }
 .phone__icon {
   background-color: var(--background-phone);
+  color: var(--color-phone);
 }
 
 .contact__right {
