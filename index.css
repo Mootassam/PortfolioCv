@@ -21,9 +21,9 @@
   --color-address: rgb(247, 80, 35);
   --background-address: rgb(254, 223, 215);
   --color-email: rgb(28, 190, 89);
-  --background-email: rgb(28, 190, 89);
+  --background-email: rgb(221, 245, 230) !important;
   --color-phone: rgb(128, 103, 240);
-  --background-phone: rgb(236, 232, 253);
+  --background-phone: rgb(236, 232, 253) !important;
 
   --background-footer: rgb(63, 68, 83);
 }
