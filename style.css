@@ -39,6 +39,7 @@ li {
   font-weight: 500;
   cursor: pointer;
   border-radius: 50px;
+  overflow: hidden;
 }
 
 .span__header {
@@ -87,9 +88,11 @@ li {
   align-self: center;
   width: 22.4%;
 }
+
 .header__logo img {
   max-width: 110px;
   height: auto;
+  vertical-align: middle;
 }
 
 .header__links ul {
@@ -426,24 +429,51 @@ Stlying the skills For verions Desktop */
 /* 
 Styling the Service for version Deskop */
 .app__service {
-  padding: 5rem 7.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   text-align: center;
-  width: min(100%, 1560px);
   margin-inline: auto;
   margin-inline: auto;
+  position: relative;
+  width: 100%;
 }
-.app__service > p {
+.service__image__left {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  z-index: 2;
+}
+.service__image__left img {
+  max-width: 460px;
+}
+.service__image__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.service__header {
+  width: min(100%, 1560px);
+  padding: 5rem 7.6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.service__header > p {
   width: 50%;
 }
 .service_list {
+  width: min(100%, 1560px);
   padding: 86px 0 0;
+  padding: 0rem 7.6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+  position: relative;
+  z-index: 3;
 }
 .service_list > div {
   background-color: var(--background-service);
@@ -487,31 +517,31 @@ Styling the Service for version Deskop */
 
 /* Styling the contact section for version desktop */
 .app__contact {
-  padding: 5rem 7.6rem;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(./images/contact1.png), url(./images/contact2.png);
-  background-repeat: no-repeat;
-  background-position: left top, right bottom;
-  width: min(100%, 1560px);
-  margin-inline: auto;
+  position: relative;
 }
 
 .contact__header {
+  width: min(100%, 1560px);
+  margin-inline: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding: 0rem 7.6rem;
 }
 .contact__header p {
   width: 60%;
 }
 .contact__address {
+  width: min(100%, 1560px);
+  padding: 6rem 7.6rem;
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 5rem 0 11.375rem;
 }
 .contact__left,
 .contact__right {
@@ -577,6 +607,19 @@ Styling the Service for version Deskop */
   display: flex;
   gap: 12px;
   margin-bottom: 12px;
+}
+.images__left,
+.images__right {
+  position: absolute;
+  z-index: 2;
+}
+.images__left {
+  top: 100px;
+  left: 0;
+}
+.images__right {
+  position: absolute;
+  bottom: 80px;
 }
 input {
   border: 0;
