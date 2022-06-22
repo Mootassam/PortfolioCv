@@ -9,7 +9,7 @@ body {
 }
 
 h3 {
-  font-size: 60px;
+  font-size: clamp(1rem, 10vw, 2rem);
   line-height: 78px;
   font-weight: 500;
   color: var(--white-title);
@@ -68,7 +68,7 @@ li {
   background-position: center;
   height: 100vh;
   width: 100%;
-  padding: 1.45rem 7.6rem;
+  padding: 1.45rem 17.6rem;
   display: flex;
   flex-direction: column;
 }
@@ -78,10 +78,10 @@ li {
   align-items: center;
   justify-items: center;
   align-content: center;
-  width: min(1440px, 100%);
   margin-inline: auto;
   font-family: "Jost", sans-serif;
   position: static;
+  width: min(100%, 1560px);
 }
 .header__logo {
   align-self: center;
@@ -95,9 +95,10 @@ li {
 .header__links ul {
   display: flex;
   gap: 1.9rem;
+  align-items: center;
 }
 
-.header__button {
+.header__links > ul > li:nth-last-child(1) {
   padding: 10.5px 35px !important;
   background-color: transparent;
   outline: 2px solid var(--button-primary);
@@ -110,8 +111,8 @@ li {
 /* **** Styling the header Content ***** */
 .header__content {
   display: flex;
-  width: min(1440px, 100%);
   margin-inline: auto;
+  justify-content: center;
 }
 .content__left,
 .content__right {
@@ -174,6 +175,8 @@ li {
   gap: 2rem;
   text-align: center;
   align-items: center;
+  width: min(100%, 1560px);
+  margin-inline: auto;
 }
 .app__detaills > div {
   display: flex;
@@ -245,10 +248,12 @@ li {
   background-position: left 3% top -26%, bottom right;
   padding: 0rem 7.6rem 5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   gap: 8rem;
+  width: min(100%, 1560px);
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .about__right,
 .about__left {
@@ -295,6 +300,8 @@ li {
   align-content: center;
   justify-content: center;
   text-align: center;
+  width: min(100%, 1560px);
+  margin-inline: auto;
 }
 .portfolio__header {
   display: flex;
@@ -316,7 +323,11 @@ li {
   font-size: 38px;
   line-height: 47.5px;
 }
-
+.portfolio__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .portfolio__header p {
   width: 70%;
 }
@@ -355,9 +366,6 @@ li {
 
   border-radius: 12px;
 }
-.button {
-  margin: auto;
-}
 
 /* 
 Stlying the skills For verions Desktop */
@@ -365,6 +373,8 @@ Stlying the skills For verions Desktop */
   display: flex;
   padding: 5rem 7.6rem;
   align-items: flex-start;
+  width: min(100%, 1560px);
+  margin-inline: auto;
 }
 .skills__left h3 {
   width: 90%;
@@ -422,6 +432,9 @@ Styling the Service for version Deskop */
   align-items: center;
   align-content: center;
   text-align: center;
+  width: min(100%, 1560px);
+  margin-inline: auto;
+  margin-inline: auto;
 }
 .app__service > p {
   width: 50%;
@@ -445,9 +458,13 @@ Styling the Service for version Deskop */
   justify-content: center;
   background-image: url(./images/service1.png);
   background-repeat: no-repeat;
+  position: relative;
 }
 .list__left img {
-  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 .list__right {
@@ -477,6 +494,7 @@ Styling the Service for version Deskop */
   background-image: url(./images/contact1.png), url(./images/contact2.png);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
+  width: min(100%, 1560px);
   margin-inline: auto;
 }
 
@@ -490,10 +508,10 @@ Styling the Service for version Deskop */
   width: 60%;
 }
 .contact__address {
-  margin: 5rem 0 11.375rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 5rem 0 11.375rem;
 }
 .contact__left,
 .contact__right {
@@ -551,11 +569,14 @@ Styling the Service for version Deskop */
 }
 
 .contact__right {
-  display: grid;
-  gird-items: center;
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInRight;
 }
 .contact__right > div {
   display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 input {
   border: 0;
@@ -583,4 +604,14 @@ textarea {
 
 .app__footer {
   background-color: var(--background-footer);
+  padding: 0 7.6rem;
+}
+.footer__content {
+  display: flex;
+  padding: 3.5625rem 0 3.8125rem;
+  justify-content: space-between;
+}
+.footer__content ul {
+  display: flex;
+  gap: 2.625rem;
 }
