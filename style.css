@@ -802,8 +802,28 @@ a {
   font-size: 20px;
   color: #f75023 !important;
 }
+/* ***** Styling the section service for the mobile **** */
 
-/* Styling the contact section for version desktop */
+@media (max-width: 1040px) {
+  .service__header {
+    width: min(100%, 1560px);
+    padding: 5rem 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .service__header > p {
+    width: 100%;
+  }
+  .service_list {
+    width: min(100%, 1560px);
+    padding: 0rem 2rem;
+    grid-template-columns: none;
+    grid-template-rows: repeat((4, 1fr));
+  }
+}
+
+/* ***** Styling the contact section for version desktop ***** */
 .app__contact {
   padding: 5rem 0;
   display: flex;
@@ -931,6 +951,29 @@ textarea {
   border: 1px solid rgba(214, 219, 229, 0.36);
   font-size: 18px;
 }
+/* **** Styling the contact Section for the version mobile *** */
+
+@media (max-width: 1040px) {
+  .contact__header {
+    width: min(100%, 1560px);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem 10px;
+    width: 100%;
+  }
+  .contact__address {
+    width: min(100%, 1560px);
+    padding: 6rem 10px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-between;
+  }
+}
 /* **** Styling the footer Section **** */
 
 .app__footer {
@@ -947,4 +990,20 @@ textarea {
 .footer__content ul {
   display: flex;
   gap: 2.625rem;
+}
+
+/* Styling the footer for the version mobile */
+
+@media (max-width: 1040px) {
+  .app__footer {
+    background-color: var(--background-footer);
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
