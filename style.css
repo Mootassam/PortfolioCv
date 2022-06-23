@@ -44,10 +44,32 @@ img {
   border-radius: 50px;
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  h3 {
+    font-size: 42px;
+    line-height: 55px;
+  }
+}
+@media (min-width: 1040px) {
+  h3 {
+    font-size: 55px;
+    line-height: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 60px;
+    line-height: 78px;
+  }
+}
 @media (min-width: 1600px) {
   .button {
     padding: 15px 40px;
     font-size: 18px;
+  }
+  h3 {
+    font-size: 85px;
+    line-height: 111px;
   }
 }
 /* **** Styling the mobile Version **** */
@@ -190,6 +212,46 @@ a {
   color: var(--white-title);
   border: none;
 }
+
+/* **** Styling the header Menue For version Mobile **** */
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1040px) {
+}
+
+@media (min-width: 1200px) {
+  .app__header {
+    padding: 1.45rem 9.6rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+  .app__header {
+    padding: 1.6rem 16.8rem;
+  }
+
+  .header__logo {
+    align-self: center;
+  }
+
+  .header__logo img {
+    max-width: 150px;
+    max-height: 80px;
+    height: auto;
+    vertical-align: middle;
+  }
+  .header__links ul {
+    gap: 3rem;
+  }
+}
+
 /* **** Styling the header Content ***** */
 .header__content {
   display: flex;
