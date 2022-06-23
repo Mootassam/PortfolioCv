@@ -685,8 +685,37 @@ a {
   width: 50%;
 }
 
-/* 
-Styling the Service for version Deskop */
+/* Styling the service section for the mobile verions  */
+@media (max-width: 1040px) {
+  .app__skills {
+    display: flex;
+    padding: 5rem 10px;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .skills__left,
+  .skills__right {
+    flex-basis: auto;
+  }
+  .skills__left {
+    margin-top: 7rem;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .skills_img {
+    width: 100%;
+    justify-content: center;
+  }
+  .skills__right img {
+    max-height: 600px;
+  }
+}
+/* ***Styling the Service for version Deskop *** */
 .app__service {
   display: flex;
   flex-direction: column;
