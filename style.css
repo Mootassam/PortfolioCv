@@ -44,24 +44,96 @@ img {
   border-radius: 50px;
   overflow: hidden;
 }
+@media (min-width: 1600px) {
+  .button {
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+}
+/* **** Styling the mobile Version **** */
 
-.span__header {
-  margin-bottom: 6px;
-  color: var(--button-primary);
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  font-family: jost, sans-serif;
+@media (min-width: 768px) {
+  .span__header {
+    margin-bottom: 6px;
+    color: var(--button-primary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: jost, sans-serif;
+  }
+
+  .h3__header {
+    margin: 0px 0px 16px;
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .p__header {
+    line-height: 16px;
+    font-size: 30px;
+  }
 }
-.h3__header {
-  margin: 0px 0px 16px;
-  font-size: 38px;
-  line-height: 47.5px;
+
+@media (min-width: 1040px) {
+  .span__header {
+    margin-bottom: 6px;
+    color: var(--button-primary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: jost, sans-serif;
+  }
+
+  .h3__header {
+    margin: 0px 0px 16px;
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .p__header {
+    line-height: 30px;
+    font-size: 16px;
+  }
 }
-.p__header {
-  width: 70%;
-  line-height: 30px;
-  font-size: 18px;
+
+@media (min-width: 1200px) {
+  .span__header {
+    margin-bottom: 6px;
+    color: var(--button-primary);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: jost, sans-serif;
+  }
+
+  .h3__header {
+    margin: 0px 0px 16px;
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .p__header {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .span__header {
+    margin-bottom: 6px;
+    color: var(--button-primary);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: jost, sans-serif;
+  }
+
+  .h3__header {
+    margin: 0px 0px 16px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .p__header {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 /* **** Styling the header the version Desktop *****/
 
@@ -254,14 +326,13 @@ a {
 /* **** Styling the about section Version desktop **** */
 .app__about {
   position: relative;
+  width: 100%;
 }
 .app__about > div {
   padding: 0rem 7.6rem 5rem;
   display: flex;
   gap: 8rem;
-  justify-content: center;
   align-items: center;
-  align-content: center;
   width: min(100%, 1560px);
   margin-inline: auto;
 }
@@ -274,18 +345,17 @@ a {
   position: absolute;
 }
 .image__about__left {
-  left: 40px;
-  top: 20px;
+  left: 100px;
+  top: -100px;
 }
 .images__about__right {
   bottom: -50px;
   right: 0;
 }
 .about__left {
-  max-height: 400px;
 }
 .about__left img {
-  max-height: 800px;
+  width: 100%;
 }
 
 .about__right > span {
@@ -298,13 +368,10 @@ a {
 
 .right__detaills {
   margin: 1.5rem 0 3rem;
-  width: 92%;
   line-height: 30px;
   text-align: start;
 }
 .about__right h3 {
-  font-size: 40px;
-  line-height: 50px;
   vertical-align: baseline;
   width: 90%;
 }
@@ -338,20 +405,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.portfolio__header span {
-  margin-bottom: 6px;
-  color: var(--button-primary);
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
-  font-family: jost, sans-serif;
-}
 
-.portfolio__header h3 {
-  margin: 0px 0px 16px;
-  font-size: 38px;
-  line-height: 47.5px;
-}
 .portfolio__images {
   padding: 0 7.6rem;
   width: min(100%, 1560px);
@@ -407,6 +461,7 @@ Stlying the skills For verions Desktop */
   align-items: flex-start;
   width: min(100%, 1560px);
   margin-inline: auto;
+  justify-content: space-between;
 }
 .skills__left h3 {
   width: 90%;
@@ -424,12 +479,8 @@ Stlying the skills For verions Desktop */
   padding-right: 50px;
 }
 .skills__right {
-  padding-left: 100px;
-  width: 150px;
 }
 .skills__right img {
-  object-fit: cover;
-  width: 100%;
 }
 
 .skills_img {
