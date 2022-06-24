@@ -244,6 +244,15 @@ a {
   margin: 0 7.2rem;
   max-height: 400px;
 }
+.p__content {
+  color: var(--white-title);
+}
+.span__content {
+  color: var(--primary--green);
+}
+.span__place {
+  color: var(--secondary--yellow);
+}
 /* **** Styling the header Menue For version Mobile **** */
 
 @media (max-width: 1920px) {
@@ -288,12 +297,7 @@ a {
     line-height: 30px;
     font-weight: 500;
   }
-  .p__content {
-    color: var(--white-title);
-  }
-  .span__place {
-    color: var(--secondary--yellow);
-  }
+
   .text {
     color: var(--white-title);
     font-size: 23px;
@@ -337,7 +341,9 @@ a {
     font-size: 60px;
     line-height: 78px;
   }
-  .p__content {
+  .p__content,
+  .span__content,
+  .span__place {
     font-size: 19px;
     line-height: 30px;
     font-weight: 500;
@@ -420,7 +426,9 @@ a {
     font-size: 55px;
     line-height: 72px;
   }
-  .p__content {
+  .p__content,
+  .span__content,
+  .span__place {
     font-size: 23px;
     line-height: 30px;
     font-weight: 500;
@@ -483,7 +491,9 @@ a {
     font-size: 42px;
     line-height: 55px;
   }
-  .p__content {
+  .p__content,
+  .span__content,
+  .span__place {
     font-size: 23px;
     line-height: 30px;
     font-weight: 500;
