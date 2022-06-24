@@ -6,18 +6,45 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--description);
+  overflow-x: hidden;
+  width: 100%;
 }
 body::-webkit-scrollbar {
-  width: 7px;
+  width: 11px;
 }
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #999 #fff;
+}
+body:-webkit-scrollbar-track {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  border: 3px solid #fff;
+  background-color: #999;
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(169, 169, 169);
-  outline: 1px solid rgb(28, 76, 124);
+/* ::-webkit-input-placeholder {
+  color: #6f6f6f;
 }
+:-moz-placeholder {
+  color: #6f6f6f;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #6f6f6f;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #6f6f6f;
+}
+::-ms-input-placeholder {
+  color: #6f6f6f;
+}
+::placeholder {
+  color: #6f6f6f;
+} */
 h3 {
   font-size: clamp(1rem, 10vw, 2rem);
   line-height: 78px;
@@ -142,30 +169,11 @@ img {
     line-height: 44px;
   }
   .p__header {
-    line-height: 30px;
     font-size: 16px;
-  }
-}
-@media (max-width: 768px) {
-  .span__header {
-    margin-bottom: 6px;
-    color: var(--button-primary);
-    font-weight: 500;
-    font-size: 20px;
     line-height: 30px;
-    font-family: jost, sans-serif;
-  }
-
-  .h3__header {
-    margin: 0px 0px 16px;
-    font-size: 35px;
-    line-height: 44px;
-  }
-  .p__header {
-    line-height: 16px;
-    font-size: 30px;
   }
 }
+
 /* **** Styling the header the version Desktop *****/
 
 .app__header {
@@ -402,7 +410,7 @@ a {
     display: block;
   }
   .mobile__nav i {
-    font-size: 24px;
+    font-size: 25px;
     color: var(--white-title);
   }
   .header__logo img {
@@ -527,8 +535,8 @@ a {
   width: 100%;
 }
 .app__about > div {
-  padding: 0rem 7.6rem 5rem;
   display: flex;
+  padding: 0rem 7.6rem 5rem;
   gap: 8rem;
   align-items: center;
   width: min(100%, 1560px);
@@ -577,7 +585,7 @@ a {
 
 @media (max-width: 1040px) {
   .app__about > div {
-    padding: 5rem 10px;
+    padding: 2rem 10px;
     gap: 4rem;
     flex-direction: column;
     text-align: center;
@@ -586,6 +594,21 @@ a {
   .about__left {
     flex-basis: none;
     width: 100%;
+  }
+  .about__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    width: 100%;
+  }
+  .about__images {
+    display: none;
+  }
+
+  .right__detaills {
+    text-align: center;
   }
 }
 
@@ -670,12 +693,16 @@ a {
   .app__portfolio {
     display: flex;
     padding: 5rem 10px;
+    width: 100%;
   }
   .portfolio__header {
     padding: 0;
   }
   .portfolio__images {
     padding: 0 10px;
+    width: 100%;
+  }
+  .portfolio__header p {
     width: 100%;
   }
   .header > ul {
@@ -689,6 +716,17 @@ a {
   .images {
     display: flex;
     flex-direction: column;
+  }
+  .background__left {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+  }
+  .background__bottom {
+    position: absolute;
+    bottom: -10px;
+    right: -200px;
+    z-index: -1;
   }
 }
 
@@ -785,6 +823,7 @@ a {
   margin-inline: auto;
   position: relative;
   width: 100%;
+  padding: 0 0 10rem;
 }
 .service__image__left {
   position: absolute;
@@ -824,10 +863,9 @@ a {
 }
 .service_list > div {
   background-color: var(--background-service);
-  padding: 4.0625rem;
+  padding: 2rem;
   border-radius: 12px;
   display: flex;
-  gap: 3rem;
 }
 .list__left {
   display: flex;
@@ -864,6 +902,9 @@ a {
 /* ***** Styling the section service for the mobile **** */
 
 @media (max-width: 1040px) {
+  .app__service {
+    padding: 0 0 3rem;
+  }
   .service__header {
     width: min(100%, 1560px);
     padding: 5rem 10px;
@@ -879,6 +920,9 @@ a {
     padding: 0rem 2rem;
     grid-template-columns: none;
     grid-template-rows: repeat((4, 1fr));
+  }
+  .service__image__right {
+    display: none;
   }
 }
 
@@ -1031,6 +1075,19 @@ textarea {
     flex-direction: column;
     gap: 3rem;
     justify-content: space-between;
+  }
+  .contact__header p {
+    width: 100%;
+  }
+
+  .images__left {
+    top: -20px;
+    left: 0;
+  }
+  .images__right {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
   }
 }
 /* **** Styling the footer Section **** */
