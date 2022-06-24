@@ -67,18 +67,6 @@ img {
   overflow: hidden;
 }
 
-@media (max-width: 1600px) {
-  .button {
-    padding: 15px 40px;
-    font-size: 18px;
-  }
-}
-@media (max-width: 1200px) {
-}
-@media (max-width: 1040px) {
-}
-@media (max-width: 768px) {
-}
 /* **** Styling the mobile Version **** */
 
 @media (max-width: 1920px) {
@@ -293,11 +281,18 @@ a {
     font-size: 85px;
     line-height: 111px;
   }
-  .p__content {
+  .p__content,
+  .span__content,
+  .span__place {
     font-size: 28px;
     line-height: 30px;
     font-weight: 500;
+  }
+  .p__content {
     color: var(--white-title);
+  }
+  .span__place {
+    color: var(--secondary--yellow);
   }
   .text {
     color: var(--white-title);
