@@ -445,7 +445,6 @@ a {
 .app__detaills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   padding: 11.875rem 7.6rem;
   gap: 4rem;
   text-align: center;
@@ -493,6 +492,15 @@ a {
 }
 
 /* ****styling the content Section Verions Mobile .**** */
+@media (max-width: 1600px) {
+  .detaills__image > img:nth-child(1) {
+    width: 90px;
+  }
+  .detaills__image > img:nth-child(2) {
+    width: 45px;
+    height: 45px;
+  }
+}
 @media (max-width: 1040px) {
   .app__detaills {
     display: grid;
@@ -506,6 +514,7 @@ a {
     margin-inline: auto;
   }
 }
+
 /* **** Styling the about section Version desktop **** */
 .app__about {
   position: relative;
