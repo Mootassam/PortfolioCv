@@ -8,7 +8,7 @@ body {
   color: var(--description);
 }
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 7px;
 }
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -85,7 +85,7 @@ img {
 }
 /* **** Styling the mobile Version **** */
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
   .span__header {
     margin-bottom: 6px;
     color: var(--button-primary);
@@ -105,6 +105,7 @@ img {
     line-height: 30px;
   }
 }
+
 @media (max-width: 1200px) {
   .span__header {
     margin-bottom: 6px;
@@ -282,14 +283,14 @@ a {
   max-height: 400px;
 }
 /* **** Styling the header Menue For version Mobile **** */
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
   body {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0;
   }
   .app__header {
-    padding: 1.6rem 16.8rem;
+    padding: 1.9rem 16.8rem;
   }
   .header__links {
     display: flex;
@@ -308,12 +309,59 @@ a {
     gap: 3rem;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1680px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
   .app__header {
-    padding: 1.45rem 9.6rem;
+    padding: 1.9rem 11rem;
   }
   .header__links {
     display: flex;
+  }
+  .header__logo {
+    align-self: center;
+  }
+
+  .header__logo img {
+    max-width: 150px;
+    max-height: 80px;
+    height: auto;
+    vertical-align: middle;
+  }
+  .header__links ul {
+    gap: 3rem;
+  }
+}
+@media (max-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+  .header__links > ul > li:nth-last-child(1) {
+    padding: 5px 25.2px 5px;
+  }
+  .app__header {
+    padding: 1.3rem 9.6rem;
+  }
+  .header__links {
+    display: flex;
+  }
+  .header__logo img {
+    max-width: 110px;
+    max-height: 32.063;
+    height: auto;
+    vertical-align: middle;
+  }
+  .header__links ul {
+    gap: 1.875rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app__header {
+    padding: 1.45rem 2.5rem;
   }
 }
 @media (max-width: 1040px) {
@@ -343,7 +391,7 @@ a {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1040px) {
   .app__header {
     padding: 10px 20px;
   }
@@ -357,9 +405,9 @@ a {
     font-size: 24px;
     color: var(--white-title);
   }
-  .header__logo {
+  .header__logo img {
     max-width: 90px;
-    max-height: 70px;
+    max-height: 27px;
   }
   .header__content {
     flex-direction: column;
@@ -526,6 +574,7 @@ a {
 }
 
 /* **** Stying the about section version mobile ***** */
+
 @media (max-width: 1040px) {
   .app__about > div {
     padding: 5rem 10px;
