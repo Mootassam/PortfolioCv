@@ -25,6 +25,10 @@
   --background-email: rgb(221, 245, 230) !important;
   --color-phone: rgb(128, 103, 240);
   --background-phone: rgb(236, 232, 253) !important;
-
   --background-footer: rgb(63, 68, 83);
+
+  /* Background reactjs */
+  --reactjs: #390000;
+  --redux: #001631;
+  --figma: #fff;
 }
