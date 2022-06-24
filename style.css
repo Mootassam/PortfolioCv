@@ -623,7 +623,7 @@ a {
 .about__years {
   position: absolute;
   background-color: var(--background-service);
-  left: -100px;
+  left: -50px;
   top: 100px;
   padding: 34px 40px 31px 36px;
   border-radius: 8px;
@@ -655,7 +655,7 @@ a {
   position: absolute;
   background-color: var(--background-service);
   right: 0;
-  bottom: 80px;
+  bottom: 55px;
   padding: 14px 30px 11px 26px;
   border-radius: 8px;
   display: flex;
