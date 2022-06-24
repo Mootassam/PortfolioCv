@@ -9,7 +9,7 @@
 :root {
   /* Primary Color  */
   --white-title: #ffffff;
-  --button-primary: #f75023;
+  --button-primary: rgb(247, 80, 35);
   --secondary-orange: rgb(247, 80, 35);
   --primary--green: rgb(28, 190, 89);
   --secondary--yellow: rgb(240, 196, 92);
