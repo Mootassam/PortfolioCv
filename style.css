@@ -863,6 +863,13 @@ a {
   .right__detaills {
     text-align: center;
   }
+  .about__right {
+    padding-left: 0;
+  }
+  .about__project,
+  .about__years {
+    display: none;
+  }
 }
 
 /* **** Styling the porfolio Version desktop **** */
