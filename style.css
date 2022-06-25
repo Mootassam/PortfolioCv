@@ -3,8 +3,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 30px;
   color: var(--description);
   overflow-x: hidden;
   width: 100%;
@@ -156,7 +156,7 @@ img {
   background-position: center;
   height: 100vh;
   width: 100%;
-  padding: 1.45rem 17.6rem;
+  padding: 1.9rem 16.1rem;
   display: flex;
   flex-direction: column;
 }
@@ -175,10 +175,9 @@ img {
   align-self: center;
 }
 
-.header__logo img {
+.header__logo > img {
   max-width: 150px;
   max-height: 80px;
-  height: auto;
   vertical-align: middle;
 }
 .header__links {
@@ -186,7 +185,7 @@ img {
 }
 .header__links ul {
   display: flex;
-  gap: 1.9rem;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -207,6 +206,30 @@ a {
 }
 .mobile__nav {
   display: none;
+}
+.h3__sm {
+  font-size: 45px;
+  line-height: 59px;
+  color: var(--secondary-orange);
+}
+.h3__lg {
+  font-size: 85px;
+  line-height: 111px;
+}
+.p__content,
+.span__content,
+.span__place {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.text {
+  color: var(--white-title);
+  font-size: 23px;
+  line-height: 35px;
+}
+.content__right > img {
+  max-height: 650px;
 }
 
 /* **** Styling the header Content ***** */
@@ -235,9 +258,7 @@ a {
 .content__left p > span:nth-child(1) {
   color: var(--primary--green);
 }
-.content__left p {
-  padding: 0.8rem 0 1.4rem 0;
-}
+
 .content__left p > span:nth-child(2) {
   color: var(--secondary--yellow);
 }
@@ -255,6 +276,7 @@ a {
 
 .p__content {
   color: var(--white-title);
+  padding: 0.8rem 0 1.4rem 0;
 }
 .span__content {
   color: var(--primary--green);
@@ -356,54 +378,8 @@ a {
   }
 }
 /* **** Styling the header Menue For version Mobile **** */
-.app__header {
-  padding: 1.9rem 16.1rem;
-}
-.header__links {
-  display: flex;
-}
-.header__logo {
-  align-self: center;
-}
-.header__logo > img {
-  max-width: 150px;
-  max-height: 80px;
-  vertical-align: middle;
-}
-.header__links ul {
-  gap: 3rem;
-}
-.h3__sm {
-  font-size: 45px;
-  line-height: 59px;
-  color: var(--secondary-orange);
-}
-.h3__lg {
-  font-size: 85px;
-  line-height: 111px;
-}
-.p__content,
-.span__content,
-.span__place {
-  font-size: 28px;
-  line-height: 30px;
-  font-weight: 500;
-}
-.text {
-  color: var(--white-title);
-  font-size: 23px;
-  line-height: 35px;
-}
-.content__right > img {
-  max-height: 650px;
-}
 
 @media (max-width: 1680px) {
-  body {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0;
-  }
   .app__header {
     padding: 1.9rem 11rem;
   }
@@ -426,6 +402,9 @@ a {
 }
 
 @media (max-width: 1600px) {
+  body {
+    font-size: 16px;
+  }
   .h3__sm {
     font-size: 25px;
     line-height: 33px;
