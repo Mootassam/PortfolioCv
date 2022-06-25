@@ -31,8 +31,6 @@ body {
   color: #6f6f6f;
 } */
 h3 {
-  font-size: clamp(1rem, 10vw, 2rem);
-  line-height: 78px;
   font-weight: 500;
   color: var(--white-title);
   font-family: "Jost", sans-serif;
@@ -114,7 +112,6 @@ img {
     line-height: 30px;
     font-family: jost, sans-serif;
   }
-
   .h3__about {
     margin-top: 6px;
     font-size: 40px;
@@ -139,7 +136,6 @@ img {
     line-height: 30px;
     font-family: jost, sans-serif;
   }
-
   .h3__header {
     margin: 0px 0px 16px;
     font-size: 35px;
@@ -180,6 +176,8 @@ img {
 }
 
 .header__logo img {
+  max-width: 150px;
+  max-height: 80px;
   height: auto;
   vertical-align: middle;
 }
@@ -358,55 +356,48 @@ a {
   }
 }
 /* **** Styling the header Menue For version Mobile **** */
-
-@media (max-width: 1920px) {
-  body {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0;
-  }
-  .app__header {
-    padding: 1.9rem 16.1rem;
-  }
-  .header__links {
-    display: flex;
-  }
-  .header__logo {
-    align-self: center;
-  }
-  .header__logo > img {
-    max-width: 150px;
-    max-height: 80px;
-    vertical-align: middle;
-  }
-  .header__links ul {
-    gap: 3rem;
-  }
-  .h3__sm {
-    font-size: 45px;
-    line-height: 59px;
-    color: var(--secondary-orange);
-  }
-  .h3__lg {
-    font-size: 85px;
-    line-height: 111px;
-  }
-  .p__content,
-  .span__content,
-  .span__place {
-    font-size: 28px;
-    line-height: 30px;
-    font-weight: 500;
-  }
-  .text {
-    color: var(--white-title);
-    font-size: 23px;
-    line-height: 35px;
-  }
-  .content__right > img {
-    max-height: 650px;
-  }
+.app__header {
+  padding: 1.9rem 16.1rem;
 }
+.header__links {
+  display: flex;
+}
+.header__logo {
+  align-self: center;
+}
+.header__logo > img {
+  max-width: 150px;
+  max-height: 80px;
+  vertical-align: middle;
+}
+.header__links ul {
+  gap: 3rem;
+}
+.h3__sm {
+  font-size: 45px;
+  line-height: 59px;
+  color: var(--secondary-orange);
+}
+.h3__lg {
+  font-size: 85px;
+  line-height: 111px;
+}
+.p__content,
+.span__content,
+.span__place {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.text {
+  color: var(--white-title);
+  font-size: 23px;
+  line-height: 35px;
+}
+.content__right > img {
+  max-height: 650px;
+}
+
 @media (max-width: 1680px) {
   body {
     font-size: 18px;
