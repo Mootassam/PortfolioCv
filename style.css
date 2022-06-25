@@ -100,7 +100,7 @@ img {
     font-size: 16px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1232px) {
   .span__header {
     margin-bottom: 6px;
     color: var(--button-primary);
@@ -364,7 +364,6 @@ a {
   .header__logo {
     align-self: center;
   }
-
   .header__logo > img {
     max-width: 150px;
     max-height: 80px;
@@ -373,7 +372,6 @@ a {
   .header__links ul {
     gap: 3rem;
   }
-
   .h3__sm {
     font-size: 45px;
     line-height: 59px;
@@ -390,7 +388,6 @@ a {
     line-height: 30px;
     font-weight: 500;
   }
-
   .text {
     color: var(--white-title);
     font-size: 23px;
@@ -479,7 +476,7 @@ a {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1232px) {
   .app__header {
     padding: 1.45rem 2.5rem;
   }
@@ -494,12 +491,17 @@ a {
   .header__links > ul > li:nth-last-child(1) {
     padding: 5px 25px;
   }
+  .reactjs,
+  .redux,
+  .scss {
+    display: none;
+  }
   .header__content {
     flex-direction: column;
   }
   .header__logo > img {
-    max-width: 300px;
-    max-height: 300px;
+    width: 90px;
+    max-height: 70px;
     height: auto;
     vertical-align: middle;
   }
@@ -513,6 +515,9 @@ a {
     order: 2;
   }
   .content__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     order: 1;
   }
 
@@ -622,9 +627,9 @@ a {
   gap: 4rem;
   text-align: center;
   align-items: center;
-  width: 100%;
   width: min(100%, 1560px);
   margin-inline: auto;
+  width: 100%;
 }
 .app__detaills > div {
   display: flex;
@@ -632,9 +637,11 @@ a {
   align-items: center;
   justify-content: center;
   line-height: 30px;
+  width: 100%;
 }
 .app__detaills > div > p {
   margin-top: 1.25rem;
+  width: 100%;
 }
 .detaills__image {
   position: relative;
@@ -666,7 +673,18 @@ a {
 
 /* ****styling the content Section Verions Mobile .**** */
 
+@media (max-width: 1920px) {
+  .app__detaills {
+    padding: 11.875rem 16.8rem;
+    gap: 3.6rem;
+  }
+}
+
 @media (max-width: 1680px) {
+  .app__detaills {
+    padding: 11.875rem 11rem;
+    gap: 4rem;
+  }
   .detaills__image > img:nth-child(1) {
     width: 90px;
   }
@@ -676,6 +694,17 @@ a {
   }
 }
 
+@media (max-width: 1440px) {
+  .app__detaills {
+    padding: 11.875rem 9.6rem;
+  }
+}
+
+@media (max-width: 1232px) {
+  .app__detaills {
+    padding: 11.875rem 2.5rem;
+  }
+}
 @media (max-width: 1040px) {
   .app__detaills {
     display: grid;
@@ -699,7 +728,7 @@ a {
   padding: 0rem 7.6rem 5rem;
   display: flex;
   align-items: center;
-  width: 100%;
+
   width: min(100%, 1560px);
   margin-inline: auto;
   gap: 2rem;
@@ -830,6 +859,7 @@ a {
   text-align: center;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 .background__left {
   position: absolute;
@@ -899,6 +929,30 @@ a {
 }
 
 /* ***** Syling the portfolio version mobile ***** */
+
+@media (max-width: 1440px) {
+  .app__portfolio {
+    padding: 1.3rem 9.6rem;
+  }
+  .portfolio__header {
+    padding: 0;
+  }
+  .portfolio__images {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1232px) {
+  .app__portfolio {
+    padding: 5rem 2.5rem;
+  }
+  .portfolio__header {
+    padding: 0;
+  }
+  .portfolio__images {
+    padding: 0;
+  }
+}
 @media (max-width: 1040px) {
   .app__portfolio {
     display: flex;
@@ -995,6 +1049,18 @@ a {
 }
 
 /* Styling the service section for the mobile verions  */
+
+@media (max-width: 1440px) {
+  .app__skills {
+    padding: 1.3rem 9.6rem;
+  }
+}
+
+@media (max-width: 1232px) {
+  .app__skills {
+    padding: 5rem 2.5rem;
+  }
+}
 @media (max-width: 1040px) {
   .app__skills {
     display: flex;
@@ -1065,7 +1131,6 @@ a {
 }
 .service_list {
   width: min(100%, 1560px);
-  padding: 86px 0 0;
   padding: 0rem 7.6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1112,6 +1177,24 @@ a {
   color: #f75023 !important;
 }
 /* ***** Styling the section service for the mobile **** */
+
+@media (max-width: 1440px) {
+  .service__header {
+    padding: 5rem 9.6rem;
+  }
+  .service_list {
+    padding: 0rem 9.6rem;
+  }
+}
+
+@media (max-width: 1232px) {
+  .service__header {
+    padding: 5rem 2.5rem;
+  }
+  .service_list {
+    padding: 0rem 2.5rem;
+  }
+}
 
 @media (max-width: 1040px) {
   .app__service {
@@ -1268,6 +1351,26 @@ textarea {
 }
 /* **** Styling the contact Section for the version mobile *** */
 
+@media (max-width: 1440px) {
+  .contact__header {
+    padding: 0rem 9.6rem;
+  }
+
+  .contact__address {
+    padding: 6rem 9.6rem;
+  }
+}
+
+@media (max-width: 1232px) {
+  .contact__header {
+    padding: 0rem 2.5rem;
+  }
+
+  .contact__address {
+    padding: 6rem 2.5rem;
+  }
+}
+
 @media (max-width: 1040px) {
   .contact__header {
     width: min(100%, 1560px);
@@ -1276,12 +1379,12 @@ textarea {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0rem 10px;
+    padding: 7rem 25px 0;
     width: 100%;
   }
   .contact__address {
     width: min(100%, 1560px);
-    padding: 6rem 10px;
+    padding: 6rem 25px;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
