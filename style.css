@@ -260,43 +260,92 @@ a {
 .scss {
   width: 75px;
   height: 75px;
+  display: inline-block;
   border-radius: 8px;
   position: absolute;
   z-index: 1;
 }
 
 .reactjs {
-  background-color: var(--reactjs);
-  top: 35px;
-  left: 60px;
+  background-color: rgb(33, 33, 33);
+  top: 40px;
+  left: 75px;
+  animation: reactjs 5s infinite linear;
 }
 .reactjs > img {
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 50px;
+  height: 50px;
   transform: translate(-50%, -50%);
 }
+/*Animation reactjs*/
+@keyframes reactjs {
+  0% {
+    top: 40px;
+  }
+
+  50% {
+    top: 60px;
+  }
+  0% {
+    top: 40px;
+  }
+}
+
 .redux {
-  background-color: var(--redux);
+  background-color: rgb(29, 29, 29);
   right: 60px;
-  top: 150px;
+  top: 100px;
+  animation: redux 5s linear infinite;
 }
 .redux > img {
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 50px;
+  height: 50px;
   transform: translate(-50%, -50%);
 }
+@keyframes redux {
+  0% {
+    top: 100px;
+  }
+
+  50% {
+    top: 130px;
+  }
+  0% {
+    top: 100px;
+  }
+}
 .scss {
-  bottom: 0;
+  bottom: 50px;
   right: 330px;
   background-color: var(--figma);
+  animation: figma 5s infinite linear;
 }
 .scss > img {
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 50px;
+  height: 50px;
   transform: translate(-50%, -50%);
+}
+
+@keyframes figma {
+  0% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 30px;
+  }
+  0% {
+    bottom: 50px;
+  }
 }
 /* **** Styling the header Menue For version Mobile **** */
 
