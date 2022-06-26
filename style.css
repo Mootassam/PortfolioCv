@@ -1077,6 +1077,9 @@ a {
   .skills__right img {
     max-height: 600px;
   }
+  .skills__right {
+    padding-left: 0px;
+  }
 }
 /* ***Styling the Service for version Deskop *** */
 .app__service {
