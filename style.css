@@ -132,7 +132,9 @@ img {
 }
 
 /* **** Styling the header the version Desktop *****/
-
+.app {
+  overflow: hidden;
+}
 .app__header {
   background-image: url(./images/background_header.jpg);
   background-repeat: no-repeat;
@@ -1368,12 +1370,12 @@ textarea {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 7rem 25px 0;
+    padding: 7rem 10px 0;
     width: 100%;
   }
   .contact__address {
     width: min(100%, 1560px);
-    padding: 6rem 25px;
+    padding: 6rem 10px;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -1392,6 +1394,12 @@ textarea {
     position: absolute;
     bottom: 80px;
     right: 0;
+  }
+  input {
+    font-size: 16px;
+  }
+  textarea {
+    font-size: 16px;
   }
 }
 /* **** Styling the footer Section **** */
