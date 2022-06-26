@@ -962,9 +962,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
-    padding: 4rem;
   }
   .images {
     display: flex;
