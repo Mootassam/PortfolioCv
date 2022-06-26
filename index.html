@@ -16,8 +16,17 @@
     />
     <title>Styling | Home</title>
   </head>
+
   <body>
+    <audio loop id="my_audio">
+      <source src="/music/Ice.mp3" />
+    </audio>
+
     <div class="app">
+      <div class="audio">
+        <i id="play" class="fa-solid fa-volume-high" onclick="pauseAudio()"></i>
+        <i id="stop" class="fa-solid fa-volume-xmark" onclick="playAudio()"></i>
+      </div>
       <div class="app__header" id="#home">
         <div class="header">
           <div class="header__logo">
@@ -397,5 +406,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
