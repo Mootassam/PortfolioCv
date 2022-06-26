@@ -841,7 +841,6 @@ a {
 
 /* **** Styling the porfolio Version desktop **** */
 .app__portfolio {
-  overflow-x: hidden;
   display: flex;
   padding: 11.5625rem 0rem 5rem;
   flex-direction: column;
@@ -857,8 +856,9 @@ a {
 }
 .background__bottom {
   position: absolute;
-  bottom: -120px;
+  bottom: 60px;
   right: 10px;
+  z-index: -1;
 }
 .portfolio__header {
   padding: 0 7.6rem;
