@@ -1093,6 +1093,7 @@ a {
   position: relative;
   width: 100%;
   padding: 0 0 10rem;
+  overflow-x: hidden;
 }
 .service__image__left {
   position: absolute;
