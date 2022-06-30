@@ -1,7 +1,8 @@
 var audio = document.getElementById("my_audio");
 var stop = document.getElementById("stop");
 var play = document.getElementById("play");
-
+const links = document.querySelector(".header__links");
+const links__ul = document.querySelector("#links__ul");
 const header = document.querySelector(".header");
 play.style.display = "none";
 function playAudio() {
@@ -16,7 +17,14 @@ function pauseAudio() {
   stop.style.display = "block";
 }
 
-// window.addEventListener("scroll", (event) => {
-//   console.log("Scrolling...");
-//   header.style = "background-color:rgb(43,45,51)";
-// });
+window.matchMedia("min-width:1024px").addEventListener("change", function () {
+  links.style = " display:flex";
+});
+
+const showMenue = () => {
+  if (links.style.display == "flex") {
+    links.style = " display:none";
+  } else {
+    links.style = " display:flex";
+  }
+};

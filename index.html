@@ -16,24 +16,22 @@
     />
     <title>Styling | Home</title>
   </head>
-
   <body>
     <audio loop id="my_audio">
       <source src="./music/Ice.mp3" />
     </audio>
-
     <div class="app">
       <div class="audio">
         <i id="play" class="fa-solid fa-volume-high" onclick="pauseAudio()"></i>
         <i id="stop" class="fa-solid fa-volume-xmark" onclick="playAudio()"></i>
       </div>
-      <div class="app__header" id="#home">
+      <div class="app__header" id="home">
         <div class="header">
           <div class="header__logo">
             <img src="./images/logo.png" alt="" />
           </div>
-          <div class="header__links">
-            <ul>
+          <div class="header__links" id="links">
+            <ul id="links__ul">
               <li><a href="#home" class="current"> Home</a></li>
               <li><a href="#about"> About </a></li>
               <li><a href="#portfolio">Portfolio</a></li>
@@ -45,7 +43,7 @@
               </li>
             </ul>
           </div>
-          <div class="mobile__nav">
+          <div class="mobile__nav" onclick="showMenue()">
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
