@@ -41,3 +41,10 @@ const showCurrent = (evt) => {
   }
   evt.currentTarget.className += " current";
 };
+
+const navigationHeight = document.querySelector(".header__links");
+
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight - 1 + "px"
+);
