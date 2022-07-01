@@ -54,17 +54,36 @@ img {
   max-width: 100%;
 }
 .button {
+  position: relative;
   font-family: "Jost", sans-serif;
   padding: 0.8rem 2.4rem;
-  background-color: var(--button-primary);
   width: max-content;
   color: var(--white-title);
   font-weight: 500;
   cursor: pointer;
   border-radius: 50px;
   overflow: hidden;
+  outline: 2px solid var(--button-primary);
+  outline-offset: -2px;
+  z-index: 1;
 }
-
+.button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--button-primary);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: transform 200ms ease-in;
+  transform-origin: top;
+}
+.button:hover:after {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
 /* **** Styling the mobile Version **** */
 .button {
   padding: 18px 50px;
@@ -177,6 +196,7 @@ img {
   width: 100%;
   margin-inline: auto;
   backdrop-filter: 4px;
+  z-index: 3;
 }
 
 .header__logo {
@@ -208,15 +228,35 @@ a {
 
 .header__links > ul > li:nth-last-child(1) {
   padding: 8px 35px 7px;
-  outline: 2px solid var(--button-primary);
-  border-radius: 50px;
+  width: max-content;
+  color: var(--white-title);
   font-weight: 500;
   cursor: pointer;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: 2px solid var(--button-primary);
+
   position: relative;
-  transition: all 0.3s ease;
+  z-index: 1;
 }
-.header__links > ul > li:nth-last-child(1):hover {
+
+.header__links > ul > li:nth-last-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleY(0);
   background-color: var(--button-primary);
+  transition: transform 200ms ease-in;
+  transform-origin: top;
+  z-index: -1;
+}
+
+.header__links > ul > li:nth-last-child(1):hover:after {
+  transform: scaleY(1);
+  transform-origin: bottom;
 }
 .current {
   color: var(--button-primary);
@@ -393,7 +433,7 @@ a {
   bottom: 50px;
   right: 330px;
   background-color: var(--figma);
-  animation: figma 5s infinite linear;
+  animation: figma 5s infinite linear alternate;
 }
 .scss > img {
   position: absolute;
