@@ -851,7 +851,24 @@ a {
 }
 
 /* **** Stying the about section version mobile ***** */
+@media (max-width: 1600px) {
+  .about__years {
+    padding: 25px 30px 21px 26px;
+  }
+  .years,
+  .totale__project {
+    font-size: 50px;
+    line-height: 65px;
+  }
 
+  .project {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .about__project {
+    padding: 14px 26px 11px 26px;
+  }
+}
 @media (max-width: 1478.4px) {
   .about {
     padding: 0rem 9.6rem;
