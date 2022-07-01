@@ -26,83 +26,109 @@
         <i id="stop" class="fa-solid fa-volume-xmark" onclick="playAudio()"></i>
       </div>
       <div class="app__header" id="home">
-        <div class="header">
-          <div class="header__logo">
-            <img src="./images/logo.png" alt="" />
+        <header>
+          <div class="header__menue">
+            <div class="content">
+              <div class="header__logo">
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <div class="header__links" id="links">
+                <ul id="links__ul">
+                  <li>
+                    <a
+                      href="#home"
+                      class="menue current"
+                      onclick="showCurrent(event)"
+                    >
+                      Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#about "
+                      class="menue"
+                      onclick="showCurrent(event)"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#portfolio"
+                      class="menue"
+                      onclick="showCurrent(event)"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#skills" class="menue" onclick="showCurrent(event)"
+                      >Skills</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#service"
+                      class="menue"
+                      onclick="showCurrent(event)"
+                      >Service</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      class="menue"
+                      onclick="showCurrent(event)"
+                    >
+                      Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./documents/Resume.pdf" download="">
+                      Download CV
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mobile__nav" onclick="showMenue()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
-          <div class="header__links" id="links">
-            <ul id="links__ul">
-              <li>
-                <a
-                  href="#home"
-                  class="menue current"
-                  onclick="showCurrent(event)"
-                >
-                  Home</a
-                >
-              </li>
-              <li>
-                <a href="#about " class="menue" onclick="showCurrent(event)">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#portfolio" class="menue" onclick="showCurrent(event)"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a href="#skills" class="menue" onclick="showCurrent(event)"
-                  >Skills</a
-                >
-              </li>
-              <li>
-                <a href="#service" class="menue" onclick="showCurrent(event)"
-                  >Service</a
-                >
-              </li>
-              <li>
-                <a href="#contact" class="menue" onclick="showCurrent(event)">
-                  Contact</a
-                >
-              </li>
-              <li>
-                <a href="./documents/Resume.pdf" download=""> Download CV </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mobile__nav" onclick="showMenue()">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
+        </header>
         <div class="header__content">
-          <div class="content__left">
-            <h3 class="h3__sm">Hello, I'm</h3>
-            <h3 class="h3__lg">James Smith</h3>
-            <p class="p__content">
-              A <span class="span__content"> Creative Designer</span>
-              From
-              <span class="span__place"> New York</span>
-            </p>
-            <div class="text">
-              I'm creative designer based in New York, and I'm very passionate
-              and dedicated to my work.
-            </div>
-            <div class="left__buttons">
-              <div class="button">About Me</div>
-              <div class="social__media"></div>
-            </div>
-          </div>
-          <div class="content__right">
-            <img src="./images/avatar.png" alt="photo avatar" />
-            <div class="reactjs">
-              <img src="./images/reactjs.png" alt="photo reactjs" />
-            </div>
-            <div class="redux">
-              <img src="./images/redux.png" alt="photo redux" />
-            </div>
-            <div class="scss">
-              <img src="./images/figma.svg" alt="photo redux" />
+          <div class="detaills__container">
+            <div class="container">
+              <div class="content">
+                <div class="content__left">
+                  <h3 class="h3__sm">Hello, I'm</h3>
+                  <h3 class="h3__lg">James Smith</h3>
+                  <p class="p__content">
+                    A <span class="span__content"> Creative Designer</span>
+                    From
+                    <span class="span__place"> New York</span>
+                  </p>
+                  <div class="text">
+                    I'm creative designer based in New York, and I'm very
+                    passionate and dedicated to my work.
+                  </div>
+                  <div class="left__buttons">
+                    <div class="button">About Me</div>
+                    <div class="social__media"></div>
+                  </div>
+                </div>
+                <div class="content__right">
+                  <img src="./images/avatar.png" alt="photo avatar" />
+                  <div class="reactjs">
+                    <img src="./images/reactjs.png" alt="photo reactjs" />
+                  </div>
+                  <div class="redux">
+                    <img src="./images/redux.png" alt="photo redux" />
+                  </div>
+                  <div class="scss">
+                    <img src="./images/figma.svg" alt="photo redux" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
