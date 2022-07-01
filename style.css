@@ -76,12 +76,12 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
-  transform: scaleY(0);
+  transform: scaleY(1);
   transition: transform 200ms ease-in;
-  transform-origin: top;
+  transform-origin: bottom;
 }
 .button:hover:after {
-  transform: scaleY(1);
+  transform: scaleY(0);
   transform-origin: bottom;
 }
 /* **** Styling the mobile Version **** */
