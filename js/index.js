@@ -28,3 +28,16 @@ const showMenue = () => {
     links.style = " display:flex";
   }
 };
+
+// active the current a //
+
+const links_active = document.getElementsByClassName("menue");
+const showCurrent = (evt) => {
+  for (let index = 0; index < links_active.length; index++) {
+    links_active[index].className = links_active[index].className.replace(
+      "current",
+      ""
+    );
+  }
+  evt.currentTarget.className += " current";
+};
