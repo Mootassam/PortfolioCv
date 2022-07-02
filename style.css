@@ -492,6 +492,7 @@ a {
   }
 }
 .close {
+  cursor: pointer;
   display: none;
 }
 /* **** Styling the header Menue For version Mobile **** */
