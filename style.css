@@ -222,6 +222,7 @@ header {
   justify-content: space-between;
 }
 .header__logo {
+  cursor: pointer;
   align-self: center;
   z-index: 4;
 }
